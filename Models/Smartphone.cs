@@ -18,25 +18,13 @@ namespace DesafioPOO.Models
         }
 
         
-        public void ExibirDados(){
-            Console.WriteLine(@$"
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            Exibindo INFORMAÇÕES
-
-            Seu numero é: {Numero}
-            Imei: {Imei}
-            Modelo: {Modelo}
-            Memoria: {Memoria}
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-" 
-            );
-        }
-        public void Ligar()
+        public abstract void ExibirDados();
+        public static void Ligar()
         {
             Console.WriteLine("Ligando...");
         }
 
-        public void ReceberLigacao()
+        public static void ReceberLigacao()
         {
             Console.WriteLine("Recebendo ligação...");
         }
